@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReplyActivity">
+
+
+    <TextView
+        android:id="@+id/text_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/message_received_txt"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    <TextView
+        android:id="@+id/textview_reply_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_header"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        />
+
+
+    <EditText
+        android:id="@+id/reply_activity_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/reply_button"
+        android:layout_toStartOf="@+id/reply_button"
+        android:layout_alignParentBottom="true"
+        android:hint="@string/reply_input_placeholder"
+        android:layout_marginLeft="@dimen/edittext_margin_left"
+        android:layout_marginStart="@dimen/btn_margin_left"
+        android:layout_marginRight="@dimen/edittext_margin_right"
+        android:layout_marginEnd="@dimen/btn_margin_right"
+        android:layout_marginBottom="@dimen/edittext_margin_bottom"/>
+
+    <Button
+        android:id="@+id/reply_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reply_button_txt"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="@dimen/btn_margin_bottom"
+        android:layout_marginLeft="@dimen/btn_margin_left"
+        android:layout_marginStart="@dimen/btn_margin_left"
+        android:layout_marginEnd="@dimen/btn_margin_right"
+        android:layout_marginRight="@dimen/btn_margin_right"
+        android:onClick="finishReplyActivity"
+   />
+
+
+
+</RelativeLayout>
